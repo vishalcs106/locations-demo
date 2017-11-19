@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="bike.rapido.rapido_test">
+    package="in.location_demo.demo">
 
     <permission
-        android:name="bike.rapido.rapido_test.multipleproximitymapv2.permission.MAPS_RECEIVE"
+        android:name="in.location_demo.demo.multipleproximitymapv2.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -13,6 +13,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:name=".App"
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.gms.version"
@@ -21,7 +22,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDaLzIKBxcFM1jiG5lvTJcrcMbeo4LUnLs"/>
         <activity
-            android:name=".view.MainActivity"
+            android:name="in.location_demo.demo.view.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
